@@ -1,1 +1,1 @@
-# vuejs-redux
+# @vuejs-redux

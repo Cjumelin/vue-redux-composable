@@ -1,5 +1,5 @@
 {
-  "name": "vuejs-redux",
+  "name": "@vuejs-redux",
   "version": "1.0.0",
   "author": "Clément Jumelin <cjumelin@protonmail.com>",
   "license": "MIT",
@@ -25,6 +25,7 @@
     "redux-vue",
     "vue-redux",
     "vuejs-redux",
+    "@vuejs-redux",
     "redux-vuejs",
     "flux",
     "immutable",
