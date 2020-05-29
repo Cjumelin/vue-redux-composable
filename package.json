@@ -1,0 +1,41 @@
+{
+  "name": "vue-redux",
+  "version": "1.0.0",
+  "author": "Clément Jumelin <cjumelin@protonmail.com>",
+  "license": "MIT",
+  "description": "Expose redux store",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "tsc": "tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json",
+    "prepublish": "npm run tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": ["es2015"]
+  },
+  "keywords": [
+    "Vuejs",
+    "vue",
+    "redux",
+    "redux-vue",
+    "vue-redux",
+    "vuejs-redux",
+    "redux-vuejs",
+    "flux",
+    "immutable",
+    "store",
+    "vue-store",
+    "store-vue"
+  ],
+  "peerDependencies": {
+    "@reduxjs/redux-devtools-extension-fork": "^0.0.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "typescript": "latest",
+    "vue": "^3.0.0-beta.14"
+  }
+}
