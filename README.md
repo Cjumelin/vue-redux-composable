@@ -1,1 +1,1 @@
-# vuejs-redux-utils
+# vue-redux-tools

@@ -1,21 +1,21 @@
 {
-  "name": "vuejs-redux-utils",
+  "name": "vue-redux-tools",
   "version": "1.0.0",
   "author": "Clément Jumelin <cjumelin@protonmail.com>",
   "license": "MIT",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/Cjumelin/vuejs-redux"
+    "url" : "https://github.com/Cjumelin/vue-redux-tools"
   },
-  "homepage": "https://github.com/Cjumelin/vuejs-redux#readme",
-  "bugs": { "url" : "https://github.com/Cjumelin/vuejs-redux/issues" },
+  "homepage": "https://github.com/Cjumelin/vue-redux-tools#readme",
+  "bugs": { "url" : "https://github.com/Cjumelin/vue-redux-tools/issues" },
   "description": "Expose redux store to vue, using Vuejs 3. It expose tools-function like in react-redux pkg",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "files": [ "lib/" ],
   "scripts": {
     "tsc": "tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json",
-    "prepublish": "npm run tsc",
+    "prepublishOnly": "npm run tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -25,7 +25,7 @@
     "redux-vue",
     "vue-redux",
     "vuejs-redux",
-    "@vuejs-redux",
+    "vue-redux-tools",
     "redux-vuejs",
     "flux",
     "immutable",
