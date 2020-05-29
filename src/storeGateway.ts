@@ -15,13 +15,11 @@ const storeChecker =
     (store:any) =>
         !store && console.error('[Err src]: No store has been provided or instanciated')
 
-export const storeInjector = () => {
-    let tmp = inject<Store>('store')
-    storeChecker(tmp)
-    return tmp
+export const useStore = () => {
+    let store = inject<Store>('store')
+    storeChecker(store)
+    return store
 }
-
-export const useStore = () => ({ store })
 
 export const useDispatch = () => store.dispatch
 

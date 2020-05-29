@@ -1,3 +1,3 @@
-import {useStore, useDispatch, useSelector, storeProvider, storeInjector} from './storeGateway'
+import {useStore, useDispatch, useSelector, storeProvider} from './storeGateway'
 
-export {useStore, useDispatch, useSelector, storeProvider, storeInjector}
+export {useStore, useDispatch, useSelector, storeProvider}

@@ -4,20 +4,25 @@ Mainly inspired by `react-redux` npm package (https://github.com/reduxjs/react-r
 Exposed function
 -
 
--  `storeProvider(store)` Func who provide the store to a HOC (must be in a `setup()` func)
+-  `provideStore(store)`
+    - Need to be call in `setup()` (https://composition-api.vuejs.org/api.html#setup)
+    - Provide your store to an HOC (as `App.vue`) and to this lib.
 
--  `storeInjector()` to inject in a HOC and use the `store` in `setup()` func of all his child
+-  `useStore()`
+    - Need to be call in `setup()` (https://composition-api.vuejs.org/api.html#setup)
+    - Provide the redux `store`.
 
--  `useStore()` Func who return `{ store }`
+-  `useSelector(selector)`
+    - Return a `ref()` where the `value` property is reactively change if the state is updated.
+     (https://composition-api.vuejs.org/api.html#ref)
 
--  `useSelector(selector)` Func who return a subscribed `ref()`to the store (https://composition-api.vuejs.org/api.html#ref).
+-  `useDispatch()`
+    - Return `dispatch`
 
--  `useDispatch()` Func that expose dispatch
-
-Tools is used by this repo : 
+Simple use case 
 -
-- Here to provide the store :
+- How to provide your `store` to the lib :
     - https://github.com/Cjumelin/Vue3-vite-redux-demo/blob/master/src/App.vue
 
-- And used here in the template :
+- How to use it in `setup()`:
     - https://github.com/Cjumelin/Vue3-vite-redux-demo/blob/master/src/uiComponent/thingList/thingList.ts
