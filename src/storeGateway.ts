@@ -1,14 +1,16 @@
 import {reactivitySelectorWrapper} from "./vueReactiveStore";
 import {combineReducers, createStore, Store} from "redux";
-import {inject} from "vue";
+import {inject, InjectionKey} from "vue";
 import {provide} from "@vue/runtime-core";
 
 let store:Store;
 
+const storeSymbol: InjectionKey<Store> = Symbol()
+
 export const storeProvider =
     (storeToProvide:Store) => {
         store = storeToProvide;
-        return provide('store', storeToProvide);
+        return provide(storeSymbol, storeToProvide);
     }
 
 const storeChecker =
