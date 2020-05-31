@@ -1,4 +1,4 @@
-# vue-redux-tools
+# vue-redux-composable
 Mainly inspired by `react-redux` npm package (https://github.com/reduxjs/react-redux)
 
 Exposed function

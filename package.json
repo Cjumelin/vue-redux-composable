@@ -1,25 +1,25 @@
 {
-  "name": "vue-redux-tools",
-  "version": "1.1.0",
+  "name": "vue-redux-composable",
+  "version": "1.0.0",
   "author": "Clément Jumelin <cjumelin@protonmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Cjumelin/vue-redux-tools"
+    "url": "https://github.com/Cjumelin/vue-redux-composable"
   },
-  "homepage": "https://github.com/Cjumelin/vue-redux-tools#readme",
+  "homepage": "https://github.com/Cjumelin/vue-redux-composable#readme",
   "bugs": {
-    "url": "https://github.com/Cjumelin/vue-redux-tools/issues"
+    "url": "https://github.com/Cjumelin/vue-redux-composable/issues"
   },
-  "description": "Expose redux store to vue, using Vuejs 3. It expose tools-function like in react-redux pkg",
+  "description": "Redux bindings for vue as a vue composable.",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "files": [
     "lib/"
   ],
   "scripts": {
-    "tsc": "tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json",
-    "prepublishOnly": "npm run tsc",
+    "build": "tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json",
+    "prepublishOnly": "yarn build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -30,6 +30,7 @@
     "vue-redux",
     "vuejs-redux",
     "vue-redux-tools",
+    "vue-redux-composable",
     "redux-vuejs",
     "flux",
     "immutable",
