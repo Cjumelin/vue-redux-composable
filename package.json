@@ -1,6 +1,6 @@
 {
   "name": "vue-redux-composable",
-  "version": "1.2.0",
+  "version": "1.0.0",
   "author": "Clément Jumelin <cjumelin@protonmail.com>",
   "license": "MIT",
   "repository": {
@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/Cjumelin/vue-redux-composable/issues"
   },
-  "description": "Redux bindings for vue as a vue composable.\nExpose redux store to vue, using vue composable api. It expose composable function like react-redux pkg",
+  "description": "Redux bindings for vue as a vue composable.",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "files": [
