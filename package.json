@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/Cjumelin/vue-redux-composable/issues"
   },
-  "description": "Expose redux store to vue, using Vuejs 3. It expose tools-function like in react-redux pkg",
+  "description": "Redux bindings for vue as a vue composable.\nExpose redux store to vue, using vue composable api. It expose composable function like react-redux pkg",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "files": [
